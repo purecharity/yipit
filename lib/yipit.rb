@@ -48,10 +48,23 @@ module Yipit
       super
     end
 
+    # @overload sources(options={})
+    #   Search for sources
+    #   @param [Hash] options A customizable set of options
+    #   @option options [String] :division One or more division slugs. See Divisions API for more details. Note: Specifying multiple divisions returns sources that exist in either of the divisions, NOT all of them.
+    #   @option options [String] :paid When paid is true, only paid sources are returned. Defaults to false.
+    # @overload deals(deal_id)
+    #   Get source details
+    #   @param [String] slug A source slug
+    #   @return [Hashie::Mash] A Hashie::Mash object representing a Yipit Deal Source
     def sources(*args)
       super
     end
 
+    # @overload tags(options={})
+    #   This method returns a list of all tags. There are no parameters specific to tags.
+    #   @param [Hash] options A customizable set of options
+    #   @return [Array] An array of Hashie::Mash objects representing Yipit tags.
     def tags(*args)
       super
     end
