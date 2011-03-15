@@ -2,6 +2,9 @@
 
 Simple Ruby wrapper for the Yipit [API](http://yipit.com/about/api_overview/). [Yipit](http://yipit.com) features deals aggregated from a number of sources, includng Groupon, LivingSocial, Restaurants.com, and more.
 
+## Under development
+
+    This bitch ain't ready for production yet.  Recognize.
 
 ## Installation
 
