@@ -23,7 +23,7 @@ Yipit uses a [`Hashie::Mash`](https://github.com/intridea/hashie) for return val
     => "New York"
     
 ### Issues
-  GitHub issue tracking sucks.  Submit issues to [`Lighthouse`](https://dealmap.lighthouseapp.com)
+  GitHub issue tracking sucks.  Submit issues to [`Lighthouse`](https://yipit.lighthouseapp.com)
 
 <a name="changelog"></a>
 ## Changelog
