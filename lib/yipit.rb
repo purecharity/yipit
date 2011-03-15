@@ -5,6 +5,9 @@ require 'core_ext/array'
 module Yipit
   class Client
     attr_reader :api_key, :conn
+
+    # Initialize the client.
+    # TODO:  Document.
     def initialize(*args)
       options = args.extract_options!
       @api_key = args[0]
@@ -53,7 +56,7 @@ module Yipit
     #   @param [Hash] options A customizable set of options
     #   @option options [String] :division One or more division slugs. See Divisions API for more details. Note: Specifying multiple divisions returns sources that exist in either of the divisions, NOT all of them.
     #   @option options [String] :paid When paid is true, only paid sources are returned. Defaults to false.
-    # @overload deals(deal_id)
+    # @overload sources(source_id)
     #   Get source details
     #   @param [String] slug A source slug
     #   @return [Hashie::Mash] A Hashie::Mash object representing a Yipit Deal Source

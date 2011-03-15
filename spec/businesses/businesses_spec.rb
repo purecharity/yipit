@@ -15,7 +15,7 @@ describe Yipit::Client do
       end
       context "business details" do
         before(:all) do
-          @businesses = @client.businesses(18005)
+          @businesses = @client.businesses("orpheum-theater")
         end
         specify { @business.name.should == "Orpheum Theatre" }
       end
