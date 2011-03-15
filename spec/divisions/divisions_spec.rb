@@ -22,11 +22,12 @@ describe Yipit::Client do
         context "by source" do
           before(:all) do
             @divisions = @client.divisions(:source => "groupon")
+            puts @divisions.size
           end
           subject { @divisions }
           context "the results" do
             specify { should_not be_nil }
-            specify { should have_at_least(1).items }
+            specify { should have_at_least(20).items }
           end
         end
       end

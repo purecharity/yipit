@@ -82,7 +82,7 @@ module Yipit
       options = args.extract_options!.merge(:key => api_key)
       response = conn.get("/v1/#{sym.to_s}/#{args[0]}") { |req| req.params = options  }
       ret = response.body.response.send sym
-      args[0].nil? ? ret : ret.first
+      args[0].nil? ? ret : ret.first if ret
     end
   end
 end
