@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Josh Deeden"]
   s.email       = ["jdeeden@gmail.com"]
-  s.homepage    = "http://github.com/jdeeden/yipit"
+  s.homepage    = "http://github.com/gangster/yipit"
   s.summary     = %q{A simple wrapper for the Yipit API}
   s.description = %q{A simple wrapper for the Yipit API}
 
