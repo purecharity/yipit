@@ -28,13 +28,9 @@ Yipit uses a [`Hashie::Mash`](https://github.com/intridea/hashie) for return val
 <a name="changelog"></a>
 ## Changelog
 
-### 0.0.3 - March 13, 2011
+### 0.0.1 - March 14, 2011
 
 * Initial version
-
-### 0.0.4 - March 13, 2011
-
-* Documentation update
 
 
 ## Under the hood
