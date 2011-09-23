@@ -14,8 +14,8 @@ module Yipit
       @conn = Faraday.new(:url => "http://api.yipit.com") do |builder|
         builder.adapter Faraday.default_adapter
         builder.adapter  :logger if options[:debug] == true
-        builder.use Faraday::Response::ParseJson
         builder.use Faraday::Response::Mashify
+        builder.use Faraday::Response::ParseJson
       end
     end
 
